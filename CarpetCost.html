@@ -1,1 +1,36 @@
 
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>Carpet Cost</TITLE>
+<HEAD>
+<BODY>
+
+<form name="carpetCost" action="">
+<input type="text" name="Length" /> Length<br /><input type="text" name="width" />
+width<br />
+<input type="text" name="CPSF" />Cost Per Square Foot<br /> <input type="button"
+value="Get Cost" onclick="test(this.form)" />
+</form>
+
+
+<script type="text/javascript">
+<--HIDE FROM INCOMPATABLE BROWSERS
+
+function test(form)
+{
+	var width = form.width.value
+	var length = form.length.value
+	var cpsf = form.CPSF.value
+	var extra
+	var cost 
+	var tcost
+	cost = (width = length * cpsf)
+	tcost = (cost * (cost * .25))
+	window.alert("Your cost of the carpet is" + tcost)
+}
+// STOP HIDING FROM INCOMPATABLE BROWSERS --> 
+</script>
+
+</script>
+</html>
